@@ -9,7 +9,7 @@ the user that an email containing account-activation information has
 been sent.
 {% endcomment %}
 
-{% block content %}
-<h1>Registration complete</h1>
-<p>You should shortly receive an activation email for you account.</p>
+{% block registration %}
+<h1>{% trans "User registration successful" %}</h1>
+<p>{% trans "We've e-mailed you instructions for activating your account to the e-mail address you submitted. You should be receiving it shortly." %}</p>
 {% endblock %}

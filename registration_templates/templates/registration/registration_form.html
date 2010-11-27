@@ -12,11 +12,11 @@ the following context:
     information on how to display this in a template.
 {% endcomment %}
 
-{% block content %}
-<h1>Registration form</h1>
+{% block registration %}
+<h1>{% trans "User registration" %}</h1>
 <form action="" method="post">
 {{ form }}
 {% csrf_token %}
-<input type="submit" name="some_name" value="Register">
+<input type="submit" name="some_name" value="{% trans "Create account" %}">
 </form>
 {% endblock %}

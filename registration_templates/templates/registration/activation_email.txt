@@ -22,6 +22,7 @@ following context:
     <http://docs.djangoproject.com/en/dev/ref/contrib/sites/>`_ for
     details regarding these objects' interfaces.
 {% endcomment %}{% load i18n %}
+{% blocktrans %}
 Dear,
 
 You have created an account for {{ site.name }}, which has to
@@ -34,3 +35,4 @@ the activation process.
 
 Kind regards,
 The Webmaster
+{% endblocktrans %}
