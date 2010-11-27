@@ -25,3 +25,15 @@ template context variables:
     request.META['SERVER_NAME']. For more on sites, see The
     "sites" framework.
 {% endcomment %}
+{% extends "registration/base.html" %}
+
+{% block content %}
+<h1 id="login">Login</h1>
+<form action="" method="post">
+{{ form }}
+{% csrf_token %}
+<input type="submit" name="some_name" value="Login">
+</form>
+<p><a href="{% url registration_register %}">Register for an account</a></p>
+<p><a href="{% url auth_password_reset %}">Forgot your password?</a></p>
+{% endblock %}

@@ -22,3 +22,15 @@ following context:
     <http://docs.djangoproject.com/en/dev/ref/contrib/sites/>`_ for
     details regarding these objects' interfaces.
 {% endcomment %}
+Dear,
+
+You have created an account for {{ site.name }}, which has to
+be activated. To do this, please follow the following link:
+http://{{ site.domain}}{% url registration_activate activation_key %}
+
+Please do take note that if your activation does not succeed
+within {{ expiration_days }} days, you will have to restart
+the activation process.
+
+Kind regards,
+The Webmaster

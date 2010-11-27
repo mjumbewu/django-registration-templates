@@ -6,3 +6,10 @@ template has no context variables of its own, and should simply inform
 the user that an email containing account-activation information has
 been sent.
 {% endcomment %}
+{% extends "registration/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1 id="registration_complete">Registration complete</h1>
+<p>You should shortly receive an activation email for you account.</p>
+{% endblock %}

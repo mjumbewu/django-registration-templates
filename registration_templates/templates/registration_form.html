@@ -9,3 +9,13 @@ the following context:
     <http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
     information on how to display this in a template.
 {% endcomment %}
+{% extends "registration/base.html" %}
+
+{% block content %}
+<h1 id="registration_form">Registration form</h1>
+<form action="" method="post">
+{{ form }}
+{% csrf_token %}
+<input type="submit" name="some_name" value="Register">
+</form>
+{% endblock %}
