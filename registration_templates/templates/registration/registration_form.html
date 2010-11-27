@@ -1,3 +1,5 @@
+{% extends "registration/base.html" %}
+{% load i18n %}
 {% comment %}
 **registration/registration_form.html**
 Used to show the form users will fill out to register. By default, has
@@ -9,8 +11,6 @@ the following context:
     <http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
     information on how to display this in a template.
 {% endcomment %}
-{% extends "registration/base.html" %}
-{% load i18n %}
 
 {% block content %}
 <h1>Registration form</h1>

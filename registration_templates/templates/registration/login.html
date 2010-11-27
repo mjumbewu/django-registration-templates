@@ -1,3 +1,5 @@
+{% extends "registration/base.html" %}
+{% load i18n %}
 {% comment %}
 **registration/login.html**
 
@@ -25,8 +27,6 @@ template context variables:
     request.META['SERVER_NAME']. For more on sites, see The
     "sites" framework.
 {% endcomment %}
-{% extends "registration/base.html" %}
-{% load i18n %}
 
 {% block content %}
 <h1>Login</h1>
