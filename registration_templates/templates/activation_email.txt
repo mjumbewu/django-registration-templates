@@ -21,7 +21,7 @@ following context:
     documentation for the Django sites framework
     <http://docs.djangoproject.com/en/dev/ref/contrib/sites/>`_ for
     details regarding these objects' interfaces.
-{% endcomment %}
+{% endcomment %}{% load i18n %}
 Dear,
 
 You have created an account for {{ site.name }}, which has to

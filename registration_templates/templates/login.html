@@ -26,9 +26,10 @@ template context variables:
     "sites" framework.
 {% endcomment %}
 {% extends "registration/base.html" %}
+{% load i18n %}
 
 {% block content %}
-<h1 id="login">Login</h1>
+<h1>Login</h1>
 <form action="" method="post">
 {{ form }}
 {% csrf_token %}

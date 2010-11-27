@@ -8,10 +8,11 @@ Used if account activation fails. With the default setup, has the following cont
     information about the actual account.
 {% endcomment %}
 {% extends "registration/base.html" %}
+{% load i18n %}
 
 {% block content %}
 {% if account %}
-    <h1 id="activation_succesfull">Activation succesfull</h1>
+    <h1>Activation succesfull</h1>
     <p>You can now <a href="{% url auth_login %}">login.</a></p>
 {% else %}
     <h1 id="activation_failed">Activation failed</h1>

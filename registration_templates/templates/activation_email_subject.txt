@@ -22,5 +22,5 @@ being used. This template has the following context:
     documentation for the Django sites framework
     <http://docs.djangoproject.com/en/dev/ref/contrib/sites/>`_ for
     details regarding these objects' interfaces.
-{% endcomment %}
+{% endcomment %}{% load i18n %}
 Account activation for {{ site.name }}
