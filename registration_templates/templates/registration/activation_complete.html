@@ -1,0 +1,13 @@
+{% extends "registration/base.html" %}
+{% load i18n %}
+{% comment %}
+Used after successful account activation. This template has no context
+variables of its own, and should simply inform the user that their
+account is now active.
+{% endcomment %}
+
+{% block registration %}
+  <h1>{% trans "Account activated" %}</h1>
+  {% url auth_login as login_url %}
+  <p>{% blocktrans %}Thanks for signing up! You can now proceed to <a href="{{ login_url }}">log in.</a>{% endblocktrans %}</p>
+{% endblock %}
